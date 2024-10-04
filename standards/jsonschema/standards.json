@@ -1,0 +1,105 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema#",
+    "$id": "https://github.com/theopenlane/policytemplates/standards",
+    "title": "Standards for audit compliance",
+    "$defs": {
+        "Control": {
+            "properties":{
+                "ref_code": {
+                    "type": "string",
+                    "description": "A unique identifier for the control, sometimes referred to as a control number.",
+                    "minLength": 1
+                },
+                "name": {
+                    "type": "string",
+                    "description": "The name of the control."
+                },
+                "description": {
+                    "type": "string",
+                    "description": "A brief description of the control."
+                },
+                "category": {
+                    "type": "string",
+                    "description": "The category of the control.",
+                    "minLength": 1
+                },
+                "subcategory": {
+                    "type": "string",
+                    "description": "The subcategory of the control."
+                },
+                "metadata": {
+                    "type": "object",
+                    "items": {
+                        "$ref": "#/$defs/Control"
+                    },
+                    "description": "Additional information about the control which is unique per standard."
+                },
+                "dti": {
+                    "enum": ["easy", "medium", "difficult"],
+                    "description": "The difficult to implement rating of the control."
+                },
+                "dtc": {
+                    "enum": ["easy", "medium", "difficult"],
+                    "description": "The difficult to collect rating of the control."
+                },
+                "sub_controls": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/Control"
+                    }
+                }
+            },
+            "required": [
+                "ref_code",
+                "category"
+            ]
+        },
+        "Metadata": {
+            "properties": {
+                "references": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "points_of_focus": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    },
+    "properties": {
+      "name": {
+        "type": "string",
+        "description": "The name of the standard.",
+        "minLength": 1
+      },
+      "version": {
+        "type": "string",
+        "description": "The version of the standard",
+        "minLength": 1
+      },
+      "web_link": {
+        "type": "string",
+        "description": "A URL to the standard's documentation."
+      },
+      "controls": {
+        "type": "array",
+        "description": "A list of controls that are part of the standard.",
+        "items": {
+            "$ref": "#/$defs/Control"
+        },
+        "contains": {
+            "minLength": 1
+        }
+    }
+  },
+  "required": [
+    "name",
+    "version",
+    "controls"
+  ]
+}

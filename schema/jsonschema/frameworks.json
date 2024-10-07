@@ -1,0 +1,141 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://theopenlane.io/draft-0/framework",
+  "$ref": "#/$defs/Framework",
+  "$defs": {
+    "Control": {
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "name of the control"
+        },
+        "description": {
+          "type": "string",
+          "description": "short description of the control"
+        },
+        "ref_code": {
+          "type": "string",
+          "minLength": 1,
+          "description": "unique identifier for the control in the framework; sometimes referred to as a control number",
+          "examples": [
+            "CC1.1",
+            "AC-2"
+          ]
+        },
+        "category": {
+          "type": "string",
+          "minLength": 1,
+          "description": "category of the control",
+          "examples": [
+            "Security",
+            "Availability"
+          ]
+        },
+        "subcategory": {
+          "type": "string",
+          "description": "subcategory of the control",
+          "examples": [
+            "System Operation",
+            "Control Environment"
+          ]
+        },
+        "sub_controls": {
+          "items": {
+            "$ref": "#/$defs/Control"
+          },
+          "type": "array",
+          "description": "sub-controls of the control if applicable"
+        },
+        "dti": {
+          "type": "string",
+          "enum": [
+            "easy",
+            "medium",
+            "difficult"
+          ],
+          "description": "difficulty to implement rating of the control"
+        },
+        "dtc": {
+          "type": "string",
+          "enum": [
+            "easy",
+            "medium",
+            "difficult"
+          ],
+          "description": "difficulty to collect evidence rating of the control"
+        },
+        "guidance": {
+          "type": "string",
+          "description": "guidance or suggested steps for implementing the control"
+        },
+        "metadata": {
+          "oneOf": [
+            {
+              "type": "object"
+            },
+            {
+              "type": "array"
+            }
+          ],
+          "description": "metadata for the control; unique to the framework"
+        }
+      },
+      "additionalProperties": false,
+      "type": "object",
+      "required": [
+        "ref_code",
+        "category"
+      ]
+    },
+    "Framework": {
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "name of the framework",
+          "examples": [
+            "SOC 2",
+            "NIST CSF"
+          ]
+        },
+        "framework": {
+          "type": "string",
+          "minLength": 1,
+          "description": "shortname (slug) of the framework",
+          "examples": [
+            "soc2",
+            "nist_csf"
+          ]
+        },
+        "version": {
+          "type": "string",
+          "minLength": 1,
+          "description": "version of the framework",
+          "examples": [
+            "2017",
+            "1.1"
+          ]
+        },
+        "web_link": {
+          "type": "string",
+          "description": "link to the documentation for the controls"
+        },
+        "controls": {
+          "items": {
+            "$ref": "#/$defs/Control"
+          },
+          "type": "array",
+          "description": "a list of controls for the framework"
+        }
+      },
+      "additionalProperties": false,
+      "type": "object",
+      "required": [
+        "name",
+        "framework",
+        "version",
+        "controls"
+      ]
+    }
+  }
+}

@@ -1,0 +1,867 @@
+{
+    "name": "SOC 2",
+    "framework": "soc2",
+    "version": "2017 - with revised points of focus 2022",
+    "web_link": "https://www.aicpa-cima.com/resources/download/2017-trust-services-criteria-with-revised-points-of-focus-2022",
+    "controls": [
+        {
+            "description": "The board of directors demonstrates independence from management and exercises oversight of the development and performance of internal control. (COSO Principle 2)",
+            "ref_code": "CC1.2",
+            "category": "Security",
+            "subcategory": "Control Environment",
+            "metadata": {
+                "points_of_focus": [
+                    "Establishes Oversight Responsibilities: The board of directors identifies and accepts its oversight responsibilities in relation to established requirements and expectations.",
+                    "Applies Relevant Expertise: The board of directors defines, maintains, and periodically evaluates the skills and expertise needed among its members to enable them to ask probing questions of senior management and take commensurate action.\n– Operates Independently: The board of directors has sufficient members who are independent from management and objective in evaluations and decision making.",
+                    "Supplements Board Expertise: The board of directors supplements its expertise relevant to security, availability, processing integrity, confidentiality, and privacy, as needed, through the use of a subcommittee or consultants."
+                ]
+            }
+        },
+        {
+            "description": "Management establishes, with board oversight, structures, reporting lines, and appropriate authorities and responsibilities in the pursuit of objectives. (COSO Principle 3)",
+            "ref_code": "CC1.3",
+            "category": "Security",
+            "subcategory": "Control Environment",
+            "metadata": {
+                "points_of_focus": [
+                    "Considers All Structures of the Entity: Management and the board of directors consider the multiple structures used (including operating units, legal entities, geographic distribution, and outsourced service providers) to support the achievement of objectives.",
+                    "Establishes Reporting Lines: Management designs and evaluates lines of reporting for each entity structure to enable execution of authorities and responsibilities and flow of information to manage the activities of the entity.",
+                    "Defines, Assigns, and Limits Authorities and Responsibilities: Management and the board of directors delegate authority, define responsibilities, and use appropriate processes and technology to assign responsibility and segregate duties as necessary at the various levels of the organization.",
+                    "Addresses Specific Requirements When Defining Authorities and Responsibilities: Management and the board of directors consider requirements relevant to security, availability, processing integrity, confidentiality, and privacy when defining authorities and responsibilities.",
+                    "Considers Interactions With External Parties When Establishing Structures, Reporting Lines, Authorities, and Responsibilities: Management and the board of directors consider the need for the entity to interact with and monitor the activities of external parties when establishing structures, reporting lines, authorities, and responsibilities."
+                ]
+            }
+        },
+        {
+            "description": "The entity demonstrates a commitment to attract, develop, and retain competent individuals in alignment with objectives. (COSO Principle 4)",
+            "ref_code": "CC1.4",
+            "category": "Security",
+            "subcategory": "Control Environment",
+            "metadata": {
+                "points_of_focus": [
+                    "Establishes Policies and Practices: Policies and practices reflect expectations of competence necessary to support the achievement of objectives.",
+                    "Evaluates Competence and Addresses Shortcomings: The board of directors and management evaluate competence across the entity and in outsourced service providers in relation to established policies and practices and act as necessary to address shortcomings.",
+                    "Attracts, Develops, and Retains Individuals: The entity provides the mentoring and training needed to attract, develop, and retain sufficient and competent personnel and outsourced service providers to support the achievement of objectives.",
+                    "Plans and Prepares for Succession: Senior management and the board of directors develop contingency plans for assignments of responsibility important for internal control.",
+                    "Considers the Background of Individuals: The entity considers the background of potential and existing personnel, contractors, and vendor employees when determining whether to employ and retain the individuals.",
+                    "Considers the Technical Competency of Individuals: The entity considers the technical competency of potential and existing personnel, contractors, and vendor employees when determining whether to employ and retain the individuals.",
+                    "Provides Training to Maintain Technical Competencies: The entity provides training programs, including continuing education and training, to ensure skill sets and technical competency of existing personnel, contractors, and vendor employees are developed and maintained."
+                ]
+            }
+        },
+        {
+            "description": "The entity holds individuals accountable for their internal control responsibilities in the pursuit of objectives. (COSO Principle 5)",
+            "ref_code": "CC1.5",
+            "category": "Security",
+            "subcategory": "Control Environment",
+            "metadata": {
+                "points_of_focus": [
+                    "Enforces Accountability Through Structures, Authorities, and Responsibilities: Management and the board of directors establish the mechanisms to communicate and hold individuals accountable for performance of internal control responsibilities across the entity and implement corrective action as necessary.",
+                    "Establishes Performance Measures, Incentives, and Rewards: Management and the board of directors establish performance measures, incentives, and other rewards appropriate for responsibilities at all levels of the entity, reflecting appropriate dimensions of performance and expected standards of conduct, and considering the achievement of both short-term and longer-term objectives.",
+                    "Evaluates Performance Measures, Incentives, and Rewards for Ongoing Relevance: Management and the board of directors align incentives and rewards with the fulfillment of internal control responsibilities in the achievement of objectives.",
+                    "Considers Excessive Pressures: Management and the board of directors evaluate and adjust pressures associated with the achievement of objectives as they assign responsibilities, develop performance measures, and evaluate performance.",
+                    "Evaluates Performance and Rewards or Disciplines Individuals: Management and the board of directors evaluate performance of internal control responsibilities, including adherence to standards of conduct and expected levels of competence, and provide rewards or exercise disciplinary action, as appropriate.",
+                    "Takes Disciplinary Actions - A sanctions process is defined, and applied as needed, when an employee violates the entity�s privacy policies or when an employee�s negligent behavior causes a privacy incident."
+                ]
+            }
+        },
+        {
+            "description": "The entity obtains or generates and uses relevant, quality information to support the functioning of internal control. (COSO Principle 13)",
+            "ref_code": "CC2.1",
+            "category": "Security",
+            "subcategory": "Communication and Information",
+            "metadata": {
+                "points_of_focus": [
+                    "Captures Internal and External Sources of Data: Information systems capture internal and external sources of data.",
+                    "Processes Relevant Data Into Information: Information systems process and transform relevant data into information.",
+                    "Maintains Quality Throughout Processing: Information systems produce information that is timely, current, accurate, complete, accessible, protected, verifiable, and retained. Information is reviewed to assess its relevance in supporting the internal control components.",
+                    "Documents Data Flow - The entity documents and uses internal and external information and data flows to support the design and operation of controls.",
+                    "Manages Assets - The entity identifies, documents, and maintains records of system components such as infrastructure, software, and other information assets. Information assets include physical endpoint devices and systems, virtual systems, data and data flows, external information systems, and organizational roles.",
+                    "Classifies Information - The entity classifies information by its relevant characteristics (for example, personally identifiable information, confidential customer information, and intellectual property) to support identification of threats to the information and the design and operation of controls.",
+                    "Uses Information That Is Complete and Accurate - The entity uses information and reports that are complete, accurate, current, and valid in the operation of controls.",
+                    "Manages the Location of Assets - The entity identifies, documents, and maintains records of physical location and custody of information assets, particularly for those stored outside the physical security control of the entity (for example, software and data stored on vendor devices or employee mobile phones under a bring-yourown-device policy)."
+                ]
+            }
+        },
+        {
+            "description": "The entity internally communicates information, including objectives and responsibilities for internal control, necessary to support the functioning of internal control. (COSO Principle 14)",
+            "ref_code": "CC2.2",
+            "category": "Security",
+            "subcategory": "Communication and Information",
+            "metadata": {
+                "points_of_focus": [
+                    "Communicates Internal Control Information: A process is in place to communicate required information to enable all personnel to understand and carry out their internal control responsibilities.",
+                    "Communicates With the Board of Directors: Communication exists between management and the board of directors so that both have information needed to fulfill their roles with respect to the entity's objectives.",
+                    "Provides Separate Communication Lines: Separate communication channels, such as whistle-blower hotlines, are in place and serve as fail-safe mechanisms to enable anonymous or confidential communication when normal channels are inoperative or ineffective.",
+                    "Selects Relevant Method of Communication: The method of communication considers the timing, audience, and nature of the information.",
+                    "Communicates Responsibilities: Entity personnel with responsibility for designing, developing, implementing, operating, maintaining, or monitoring system controls receive communications about their responsibilities, including changes in their responsibilities, and have the information necessary to carry out those responsibilities.",
+                    "Communicates Information on Reporting Failures, Incidents, Concerns, and Other Matters: Entity personnel are provided with information on how to report systems failures, incidents, concerns, and other complaints to personnel.",
+                    "Communicates Objectives and Changes to Objectives: The entity communicates its objectives and changes to those objectives to personnel in a timely manner.\n– Communicates Information to Improve Security Knowledge and Awareness: The entity communicates information to improve security knowledge and awareness and to model appropriate security behaviors to personnel through a security awareness training program.",
+                    "(At system level): Communicates Information About System Operation and Boundaries: The entity prepares and communicates information about the design and operation of the system and its boundaries to authorized personnel to enable them to understand their role in the system and the results of system operation.",
+                    "(At system level): Communicates System Objectives: The entity communicates its objectives to personnel to enable them to carry out their responsibilities.",
+                    "(At system level): Communicates System Changes: System changes that affect responsibilities or the achievement of the entity’s objectives are communicated in a timely manner.",
+                    "Communicates Information to Improve Privacy Knowledge and Awareness - The entity communicates information to improve privacy knowledge and awareness and to model appropriate behaviors to personnel through a privacy awareness training program.",
+                    "Communicates Incident Reporting Methods - The entity has communicated to employees and others within the entity the process used to report a suspected privacy incident."
+                ]
+            }
+        },
+        {
+            "description": "The entity communicates with external parties regarding matters affecting the functioning of internal control. (COSO Principle 15)",
+            "ref_code": "CC2.3",
+            "category": "Security",
+            "subcategory": "Communication and Information",
+            "metadata": {
+                "points_of_focus": [
+                    "Communicates to External Parties: Processes are in place to communicate relevant and timely information to external parties, including shareholders, partners, owners, regulators, customers, financial analysts, and other external parties.",
+                    "Enables Inbound Communications: Open communication channels allow input from customers, consumers, suppliers, external auditors, regulators, financial analysts, and others, providing management and the board of directors with relevant information.",
+                    "Communicates With the Board of Directors: Relevant information resulting from assessments conducted by external parties is communicated to the board of directors.",
+                    "Provides Separate Communication Lines: Separate communication channels, such as whistle-blower hotlines, are in place and serve as fail-safe mechanisms to enable anonymous or confidential communication when normal channels are inoperative or ineffective.",
+                    "Selects Relevant Method of Communication: The method of communication considers the timing, audience, and nature of the communication and legal, regulatory, and fiduciary requirements and expectations.",
+                    "(For Trust Service Criteria for CONFIDENTIALITY): Communicates Objectives Related to Confidentiality and Changes to Those Objectives: The entity communicates, to external users, vendors, business partners, and others whose products andor services, or both, are part of the system, objectives and changes to the entity�s objectives related to confidentiality and the protection of confidential information, as well as changes to those  objectives.",
+                    "(For Trust Service Criteria for PRIVACY): Communicates Objectives Related to Privacy and Changes to Those Objectives: The entity communicates, to external users, vendors, business partners, and others whose products andor services, or both, are part of the system, the entity�s objectives related to privacy and the protection of personal information, as well as changes to those objectives.",
+                    "(For Trust Service Criteria for PRIVACY): Communicates Incident Reporting Methods - The entity communicates to user entities, third parties, data subjects, and others the process used to report a suspected privacy incident.",
+                    "(At system level): Communicates Information About System Operation and Boundaries: The entity prepares and communicates information about the design and operation of the system and its boundaries to authorized external users to permit users to understand their role in the system and the results of system operation.",
+                    "(At system level): Communicates System Objectives: The entity communicates its system objectives to appropriate external users.",
+                    "(At system level): Communicates System Responsibilities: External users with responsibility for designing, developing, implementing, operating, maintaining, and monitoring system controls receive information about such responsibilities and have the information necessary to carry out such responsibilities.",
+                    "(At system level): Communicates Information on Reporting System Failures, Incidents, Concerns, and Other Matters: External users are provided with information on how to report systems failures, incidents, concerns, and other complaints to appropriate entity personnel."
+                ]
+            }
+        },
+        {
+            "description": "The entity specifies objectives with sufficient clarity to enable the identification and assessment of risks relating to objectives. (COSO Principle 6)",
+            "ref_code": "CC3.1",
+            "category": "Security",
+            "subcategory": "Risk Assessment",
+            "metadata": {}
+        },
+        {
+            "description": "The entity identifies risks to the achievement of its objectives across the entity and analyzes risks as a basis for determining how the risks should be managed. (COSO Principle 7)",
+            "ref_code": "CC3.2",
+            "category": "Security",
+            "subcategory": "Risk Assessment",
+            "metadata": {
+                "points_of_focus": [
+                    "Includes Entity, Subsidiary, Division, Operating Unit, and Functional Levels: The entity identifies and assesses risk at the entity, subsidiary, division, operating unit, and functional levels relevant to the achievement of objectives.",
+                    "Analyzes Internal and External Factors: Risk identification considers both internal and external factors and their impact on the achievement of objectives.",
+                    "Involves Appropriate Levels of Management: The entity puts into place effective risk assessment mechanisms that involve appropriate levels of management.",
+                    "Estimates Significance of Risks Identified: Identified risks are analyzed through a process that includes estimating the potential significance of the risk.",
+                    "Determines How to Respond to Risks: Risk assessment includes considering how the risk should be managed and whether to accept, avoid, reduce, or share the risk.",
+                    "Identifies Threats to Objectives: The entity identifies hreats to the achievement of its objectives from intentional (including malicious) and unintentional acts and environmental events.",
+                    "Identifies Vulnerability of System Components - The entity identifies the vulnerabilities of system components, including system processes, infrastructure, software, and other information assets.",
+                    "Analyzes Threats and Vulnerabilities From Vendors, Business Partners, and Other Parties: The entity's risk assessment process includes the analysis of potential threats and vulnerabilities arising from vendors providing goods and services, as well as threats and vulnerabilities arising from business partners, customers, and other third partiess with access to the entity's information systems.",
+                    "Assesses the Significance of the Risks - The entity assesses the significance of the identified risks, including (1) determining the criticality of system components, including information assets, in achieving the objectives; (2) assessing the susceptibility of the identified vulnerabilities to the identified threats (3) assessing the likelihood of the identified risks (4) assessing the magnitude of the effect of potential risks to the achievement of the objectives; (5) considering the potential effects of unidentified threats and vulnerabilities on the assessed risks; (6) developing risk mitigation strategies to address the assessed risks; and (7) evaluating the appropriateness of residual risk (including whether to accept, reduce, or share such risks)."
+                ]
+            }
+        },
+        {
+            "description": "The entity considers the potential for fraud in assessing risks to the achievement of objectives. (COSO Principle 8)",
+            "ref_code": "CC3.3",
+            "category": "Security",
+            "subcategory": "Risk Assessment",
+            "metadata": {
+                "points_of_focus": [
+                    "Considers Various Types of Fraud: The assessment of fraud considers fraudulent reporting, possible loss of assets, and corruption resulting from the various ways that fraud and misconduct can occur.",
+                    "Assesses Incentives and Pressures: The assessment of fraud risks considers incentives and pressures.",
+                    "Assesses Opportunities: The assessment of fraud risk considers opportunities for unauthorized acquisition, use, or disposal of assets, altering the entity's reporting records, or committing other inappropriate acts.",
+                    "Assesses Attitudes and Rationalizations: The assessment of fraud risk considers how management and other personnel might engage in or justify inappropriate actions.",
+                    "Considers the Risks Related to the Use of IT and Access to Information: The assessment of fraud risks includes consideration of internal and external threats and vulnerabilities that arise specifically from the use of IT and access to information."
+                ]
+            }
+        },
+        {
+            "description": "The entity identifies and assesses changes that could significantly impact the system of internal control. (COSO Principle 9)",
+            "ref_code": "CC3.4",
+            "category": "Security",
+            "subcategory": "Risk Assessment",
+            "metadata": {
+                "points_of_focus": [
+                    "Assesses Changes in the External Environment: The risk identification process considers changes to the regulatory, economic, and physical environment in which the entity operates.",
+                    "Assesses Changes in the Business Model: The entity considers the potential impacts of new business lines, dramatically altered compositions of existing business lines, acquired or divested business operations on the system of internal control, rapid growth, changing reliance on foreign geographies, and new technologies.",
+                    "Assesses Changes in Leadership: The entity considers changes in management and respective attitudes and philosophies on the system of internal control.\n– Assess Changes in Systems and Technology: The risk identification process considers changes arising from changes in the entity's systems and changes in the technology environment.",
+                    "Assess Changes in Vendor and Business Partner Relationships: The risk identification process considers changes in vendor and business partner relationships.",
+                    "Assesses Changes in Threats and Vulnerabilities - The risk identification process assesses changes in (1) internal and external threats to and vulnerabilities of the components of the entity�s systems and (2) the likelihood and magnitude of the resultant risks to the achievement of the entity�s objectives."
+                ]
+            }
+        },
+        {
+            "description": "The entity selects, develops, and performs ongoing and/or separate evaluations to ascertain whether the components of internal control are present and functioning. (COSO Principle 16)",
+            "ref_code": "CC4.1",
+            "category": "Security",
+            "subcategory": "Monitoring Activities",
+            "metadata": {}
+        },
+        {
+            "description": "The entity evaluates and communicates internal control deficiencies in a timely manner to those parties responsible for taking corrective action, including senior management and the board of directors, as appropriate. (COSO Principle 17)",
+            "ref_code": "CC4.2",
+            "category": "Security",
+            "subcategory": "Monitoring Activities",
+            "metadata": {
+                "points_of_focus": [
+                    "Assesses Results: Management and the board of directors, as appropriate, assess results of ongoing and separate evaluations.",
+                    "Communicates Deficiencies: Deficiencies are communicated to parties responsible for taking corrective action and to senior management and the board of directors, as appropriate.",
+                    "Monitors Corrective Action: Management tracks whether deficiencies are remedied on a timely basis."
+                ]
+            }
+        },
+        {
+            "description": "The entity selects and develops control activities that contribute to the mitigation of risks to the achievement of objectives to acceptable levels. (COSO Principle 10)",
+            "ref_code": "CC5.1",
+            "category": "Security",
+            "subcategory": "Control Activities",
+            "metadata": {
+                "points_of_focus": [
+                    "Considers at What Level Activities Are Applied: Management considers control activities at various levels in the entity.",
+                    "Addresses Segregation of Duties: Management segregates incompatible duties, and where such segregation is not practical, management selects and develops alternative control activities."
+                ]
+            }
+        },
+        {
+            "description": "The entity also selects and develops general control activities over technology to support the achievement of objectives. (COSO Principle 11)",
+            "ref_code": "CC5.2",
+            "category": "Security",
+            "subcategory": "Control Activities",
+            "metadata": {
+                "points_of_focus": [
+                    "Determines Dependency Between the Use of Technology in Business Processes and Technology General Controls: Management understands and determines the dependency and linkage between business processes, automated control activities, and technology general controls.",
+                    "Establishes Relevant Technology Infrastructure Control Activities: Management selects and develops control activities over the technology infrastructure, which are designed and implemented to help ensure the completeness, accuracy, and availability of technology processing.",
+                    "Establishes Relevant Security Management Process Controls Activities: Management selects and develops control activities that are designed and implemented to restrict technology access rights to authorized users commensurate with their job\nresponsibilities and to protect the entity's assets from external threats.\n– Establishes Relevant Technology Acquisition, Development, and Maintenance Process Control Activities: Management selects and develops control activities over the acquisition, development, and maintenance of technology and its infrastructure to achieve management's objectives."
+                ]
+            }
+        },
+        {
+            "description": "The entity deploys control activities through policies that establish what is expected and in procedures that put policies into action. (COSO Principle 12)",
+            "ref_code": "CC5.3",
+            "category": "Security",
+            "subcategory": "Control Activities",
+            "metadata": {
+                "points_of_focus": [
+                    "Establishes Responsibility and Accountability for Executing Policies and Procedures: Management establishes responsibility and accountability for control activities with management (or other designated personnel) of the business unit or function in which the relevant risks reside.",
+                    "Performs in a Timely Manner: Responsible personnel perform control activities in a timely manner as defined by the policies and procedures.",
+                    "Takes Corrective Action: Responsible personnel investigate and act on matters identified as a result of executing control activities.",
+                    "Performs Using Competent Personnel: Competent personnel with sufficient authority perform control activities with diligence and continuing focus.",
+                    "Reassesses Policies and Procedures: Management periodically reviews control activities to determine their continued relevance and refreshes them when necessary."
+                ]
+            }
+        },
+        {
+            "description": "The entity implements logical access security software, infrastructure, and architectures over protected information assets to protect them from security events to meet the entity’s objectives.",
+            "ref_code": "CC6.1",
+            "category": "Security",
+            "subcategory": "Logical and Physical Access Controls",
+            "metadata": {
+                "points_of_focus": [
+                    "Identifies and Manages the Inventory of Information Assets: The entity identifies, inventories, classifies, and manages information assets (for example, infrastructure, software, and data).",
+                    "Assesses New Architectures - The entity identifies new system architectures and assesses their security prior to implementation into the system environment.",
+                    "Restricts Logical Access: The entity restricts logical access to information assets, including infrastructure (for example, server, storage, network elements, APIs, and endpoint devices), software, and data (at rest, during processing, or in transmission) through the use of access control software, rule sets, and standard configuration hardening processes.",
+                    "Identifies and Authenticates Users: The entity identifies and authenticates persons, infrastructure, and software prior to accessing information assets, whether locally or remotely. The entity uses more complex or advanced user authentication techniques such as multifactor authentication when such protections are deemed appropriate based on its risk mitigation strategy.",
+                    "Considers Network Segmentation: The entity uses network segmentation, zero trust architectures, and other techniques to isolate unrelated portions of the entity's information technology from each other based on the entity�s risk mitigation strategy.",
+                    "Manages Points of Access: Points of access by outside entities and the types of data that flow through the points of access are identified, inventoried, and managed. The types of individuals and systems using each point of access are identified, documented, and managed.",
+                    "Restricts Access to Information Assets: Combinations of data classification, separate data structures, port restrictions, access protocol restrictions, user identification, and digital certificates are used to establish access control rules and configuration standards for information assets.",
+                    "Manages Identification and Authentication: Identification and authentication requirements are established, documented, and managed for individuals and systems accessing entity information, infrastructure and software.",
+                    "Manages Credentials for Infrastructure and Software: New internal and external infrastructure and software are registered, authorized, and documented prior to being granted access credentials and implemented on the network or access point. Credentials are removed and access is disabled when access is no longer required or the infrastructure and software are no longer in use.",
+                    "Uses Encryption to Protect Data: The entity uses encryption to protect data (at rest, during processing, or in transmission), when such protections are deemed appropriate based on the entity�s risk mitigation strategy.",
+                    "Protects Cryptographic Keys: The entity protects cryptographic keys during generation, storage, use, and destruction. Cryptographic modules, algorithms, key lengths, and architectures are appropriate based on the entity�s risk mitigation strategy.",
+                    "Restricts Access to and Use of Confidential Information for Identified Purposes - Logical access to and use of confidential information is restricted to identified purposes.",
+                    "(Privacy Criteria Only) - Restricts Access to and the Use of Personal Information - Logical access to and use of personal information is restricted to authorized personnel who require such access to fulfill the identified purposes to support the achievement of the entity�s objectives related to privacy."
+                ]
+            }
+        },
+        {
+            "description": "Prior to issuing system credentials and granting system access, the entity registers and authorizes new internal and external users whose access is administered by the entity. For those users whose access is administered by the entity, user system credentials are removed when user access is no longer authorized.",
+            "ref_code": "CC6.2",
+            "category": "Security",
+            "subcategory": "Logical and Physical Access Controls",
+            "metadata": {
+                "points_of_focus": [
+                    "Reviews Validity of Access Credentials - The entity reviews access credentials on a periodic basis for validity (for example, employees, contractors, vendors, and business partner personnel) and inappropriate system or service accounts.",
+                    "Prevents the Use of Credentials When No Longer Valid - Processes are in place to disable, destroy, or otherwise prevent the use of access credentials when no longer valid."
+                ]
+            }
+        },
+        {
+            "description": "The entity authorizes, modifies, or removes access to data, software, functions, and other protected information assets based on roles, responsibilities, or the system design and changes, giving consideration to the concepts of least privilege and segregation of duties, to meet the entity’s objectives.",
+            "ref_code": "CC6.3",
+            "category": "Security",
+            "subcategory": "Logical and Physical Access Controls",
+            "metadata": {
+                "points_of_focus": [
+                    "Removes Access to Protected Information Assets: Processes are in place to remove access to protected information assets when no longer required.",
+                    "Uses Access Control Structures - The entity uses access control structures, such as role-based access controls, to restrict access to protected information assets, limit privileges, and support segregation of incompatible functions.",
+                    "Reviews Access Roles and Rules - The appropriateness of access roles and access rules is reviewed on a periodic basis for unnecessary and inappropriate individuals (for example, employees, contractors, vendors, business partner personnel) and inappropriate system or service accounts. Access roles and rules are modified, as appropriate."
+                ]
+            }
+        },
+        {
+            "description": "The entity restricts physical access to facilities and protected information assets (for example, data center facilities, backup media storage, and other sensitive locations) to authorized personnel to meet the entity’s objectives.",
+            "ref_code": "CC6.4",
+            "category": "Security",
+            "subcategory": "Logical and Physical Access Controls",
+            "metadata": {
+                "points_of_focus": [
+                    "Creates or Modifies Physical Access - Processes are in place to create or modify physical access by employees, contractors, vendors, and business partner personnel to facilities such as data centers, office spaces, and work areas, based on appropriate authorization.",
+                    "Removes Physical Access - Processes are in place to remove physical access to facilities and protected information assets when an employee, contractor, vendor, or business partner no longer requires access.",
+                    "Recovers Physical Devices - Processes are in place to recover entity devices (for example, badges, laptops, and mobile devices) when an employee, contractor, vendor, or business partner no longer requires access.",
+                    "Reviews Physical Access - Processes are in place to periodically review physical access to help ensure consistency with job responsibilities."
+                ]
+            }
+        },
+        {
+            "description": "The entity discontinues logical and physical protections over physical assets only after the ability to read or recover data and software from those assets has been diminished and is no longer required to meet the entity’s objectives.",
+            "ref_code": "CC6.5",
+            "category": "Security",
+            "subcategory": "Logical and Physical Access Controls",
+            "metadata": {
+                "points_of_focus": [
+                    "Removes Data and Software for Disposal - Procedures are in place to remove, delete, or otherwise render data and software inaccessible from physical assets and other devices owned by the entity, its vendors, and employees when the data and software are no longer required on the asset or the asset will no longer be under the control of the entity."
+                ]
+            }
+        },
+        {
+            "description": "The entity implements logical access security measures to protect against threats from sources outside its system boundaries.",
+            "ref_code": "CC6.6",
+            "category": "Security",
+            "subcategory": "Logical and Physical Access Controls",
+            "metadata": {
+                "points_of_focus": [
+                    "Restricts Access: The types of activities that can occur through a communication channel (for example, FTP site, router port) are restricted.",
+                    "Protects Identification and Authentication Credentials: Identification and authentication credentials are protected during transmission outside its system boundaries.",
+                    "Requires Additional Authentication or Credentials: Additional authentication information or credentials are required when accessing the system from outside its boundaries.",
+                    "Implements Boundary Protection Systems - Boundary protection systems (for example, firewalls, demilitarized zones, intrusion detection or prevention systems, and endpoint detection and response systems) are configured, implemented, and maintained to protect external access points."
+                ]
+            }
+        },
+        {
+            "description": "The entity restricts the transmission, movement, and removal of information to authorized internal and external users and processes, and protects it during transmission, movement, or removal to meet the entity’s objectives.",
+            "ref_code": "CC6.7",
+            "category": "Security",
+            "subcategory": "Logical and Physical Access Controls",
+            "metadata": {
+                "points_of_focus": [
+                    "Uses Encryption Technologies or Secure Communication Channels to Protect Data: Encryption technologies or secured communication channels are used to protect transmission of data and other communications beyond connectivity access points.",
+                    "Protects Removal Media: Encryption technologies and physical asset protections are used for removable media (such as USB drives and backup tapes), as appropriate.",
+                    "Protects Endpoint Devices - Processes and controls are in place to protect endpoint devices (such as mobile devices, laptops, desktops, and sensors)."
+                ]
+            }
+        },
+        {
+            "description": "The entity implements controls to prevent or detect and act upon the introduction of unauthorized or malicious software to meet the entity’s objectives.",
+            "ref_code": "CC6.8",
+            "category": "Security",
+            "subcategory": "Logical and Physical Access Controls",
+            "metadata": {
+                "points_of_focus": [
+                    "Uses Antivirus and Anti-Malware Software: Antivirus and anti-malware software on servers and endpoint devices is configured, implemented and maintained to provide for the interception or detection and remediation of malware.",
+                    "Scans Information Assets From Outside the Entity for Malware and Other Unauthorized Software - Procedures are in place to scan information assets that have been transferred or returned to the entity�s custody for malware and other unauthorized software. Detected malware or other software is removed prior to connection to the entity�s network."
+                ]
+            }
+        },
+        {
+            "description": "To meet its objectives, the entity uses detection and monitoring procedures to identify (1) changes to configurations that result in the introduction of new vulnerabilities, and (2) susceptibilities to newly discovered vulnerabilities.",
+            "ref_code": "CC7.1",
+            "category": "Security",
+            "subcategory": "System Operations",
+            "metadata": {
+                "points_of_focus": [
+                    "Monitors Infrastructure and Software: The entity monitors infrastructure and software for noncompliance with the standards, which could threaten the achievement of the entity's\nobjectives.",
+                    "Implements Change-Detection Mechanisms: The IT system includes a change-detection mechanism (for example, file integrity monitoring tools) to alert personnel to unauthorized modifications of critical system files, configuration files, or content files.",
+                    "Detects Unknown or Unauthorized Components: Procedures are in place to detect the introduction of unknown or unauthorized components.\n–� Conducts Vulnerability Scans - The entity conducts infrastructure and software vulnerability scans designed to identify potential vulnerabilities or misconfigurations on a periodic basis and after significant changes are made to the environment. Action is taken to remediate identified deficiencies in a timely manner to support the achievement of the entity�s objectives."
+                ]
+            }
+        },
+        {
+            "description": "The entity monitors system components and the operation of those components for anomalies that are indicative of malicious acts, natural disasters, and errors affecting the entity’s ability to meet its objectives; anomalies are analyzed to determine whether they represent security events.",
+            "ref_code": "CC7.2",
+            "category": "Security",
+            "subcategory": "System Operations",
+            "metadata": {
+                "points_of_focus": [
+                    "Implements Detection Policies, Procedures, and Tools: Detection policies, procedures and tools are defined and implemented on Infrastructure and software to\nidentify potential intrusions, inappropriate access and anomalies in the operation of or unusual activity on systems. Procedures may include—\n(1) a defined governance process for security event detection and management;\n(2) use of intelligence sources to identify newly discovered threats and vulnerabilities; and\n(3) logging of unusual system activities.",
+                    "Designs Detection Measures: Detection measures are designed to identify anomalies that could result from actual or attempted \n(1) compromise of physical barriers;\n(2) unauthorized actions of authorized personnel;\n(3) use of compromised identification and authentication credentials;\n(4) unauthorized access from outside the system boundaries;\n(5) compromise of authorized external parties; and\n(6) implementation or connection of unauthorized hardware and software.\n– Implements Filters to Analyze Anomalies: Management has implemented procedures to filter, summarize, and analyze anomalies to identify security events.",
+                    "Monitors Detection Tools for Effective Operation: Management has implemented processes to monitor and maintain the effectiveness of detection tools."
+                ]
+            }
+        },
+        {
+            "description": "The entity evaluates security events to determine whether they could or have resulted in a failure of the entity to meet its objectives (security incidents) and, if so, takes actions to prevent or address such failures.",
+            "ref_code": "CC7.3",
+            "category": "Security",
+            "subcategory": "System Operations",
+            "metadata": {
+                "points_of_focus": [
+                    "Responds to Security Incidents: Procedures are in place for responding to security incidents and evaluating the effectiveness of those policies and procedures on a periodic basis.",
+                    "Communicates and Reviews Detected Security Events: Detected security events are communicated to and reviewed by the individuals responsible for the management of the security program and actions are taken, if necessary.",
+                    "Develops and Implements Procedures to Analyze Security Incidents: Procedures are in place to analyze security incidents and determine system impact.",
+                    "(For Trust Service Criteria of PRIVACY): Assesses the Impact on Personal Information: Detected security events are evaluated to determine whether they could or did result in the unauthorized disclosure or use of personal information and whether there has been a failure to comply with applicable laws or regulations.",
+                    "(For Trust Service Criteria of PRIVACY): Determines Personal Information Used or Disclosed: When an unauthorized use or disclosure of personal information has occurred, the affected information is identified and actions are taken to help prevent future recurrence and address control failures to support the achievement of entity objectives.",
+                    "(For Trust Service Criteria of CONFIDENTIALITY): Assesses the Impact on Confidential Information - Detected security events are evaluated to determine whether they could or did result in the unauthorized disclosure or use of confidential information.",
+                    "(For Trust Service Criteria of CONFIDENTIALITY): Determines Confidential Information Used or Disclosed - When an unauthorized use or disclosure of confidential information has occurred, the affected information is identified and actions are taken to help prevent future recurrence and address control failures to support the achievement of entity objectives."
+                ]
+            }
+        },
+        {
+            "description": "The entity responds to identified security incidents by executing a defined incident response program to understand, contain, remediate, and communicate security incidents, as appropriate.",
+            "ref_code": "CC7.4",
+            "category": "Security",
+            "subcategory": "System Operations",
+            "metadata": {
+                "points_of_focus": [
+                    "Contains and Responds to Security Incidents: Procedures are in place to respond to and contain security incidents that actively threaten entity objectives.",
+                    "Mitigates Ongoing Security Incidents: Procedures are in place to mitigate the effects of ongoing security incidents.",
+                    "Resolves Security Incidents: Procedures are in place to resolve security incidents through closure of vulnerabilities, removal of unauthorized access, and\nother remediation actions.",
+                    "Restores Operations: Procedures are in place to restore data and business operations to an interim state that permits the achievement of entity objectives.",
+                    "Develops and Implements Communication of Security Incidents: Protocols for communicating, in a timely manner, information regarding security incidents and actions taken to affected parties are developed and implemented to support the achievement of the entity's objectives.",
+                    "Obtains Understanding of Nature of Incident and Determines Containment Strategy: An understanding of the nature (for example, the method by which the incident occurred and the affected system resources) and severity of the security incident is obtained to determine the appropriate response and containment strategy, including— \n(1) a determination of the appropriate response time frame, and\n(2) the determination and execution of the containment approach.",
+                    "Remediates Identified Vulnerabilities: Identified vulnerabilities are remediated through the development and execution of remediation activities.",
+                    "Communicates Remediation Activities: Remediation activities are documented and communicated in accordance with the incident response program.",
+                    "Evaluates the Effectiveness of Incident Response: The design of incident response activities is evaluated for effectiveness on a periodic basis.",
+                    "Periodically Evaluates Incidents: Periodically, management reviews incidents related to security, availability, processing integrity, confidentiality, and privacy and identifies the need for system changes based on incident patterns and root causes.",
+                    "(For Trust Service Criteria of PRIVACY): Applies Breach Response Procedures - Breach response procedures are defined and applied in the event of a confirmed privacy incident.",
+                    "(For Trust Service Criteria of PRIVACY): Communicates Unauthorized Use and Disclosure: Events that resulted in unauthorized use or disclosure of personal information are communicated to the data subjects, legal and regulatory authorities, and others as required.",
+                    "(For Trust Service Criteria of PRIVACY): Application of Sanctions: The conduct of individuals and organizations operating under the authority of the entity and involved in the unauthorized use or disclosure of personal information is evaluated and, if appropriate, sanctioned in accordance with entity policies and legal and regulatory requirements."
+                ]
+            }
+        },
+        {
+            "description": "The entity identifies, develops, and implements activities to recover from identified security incidents.",
+            "ref_code": "CC7.5",
+            "category": "Security",
+            "subcategory": "System Operations",
+            "metadata": {
+                "points_of_focus": [
+                    "Restores the Affected Environment: The activities restore the affected environment to functional operation by rebuilding systems, updating software, installing patches, modifying access controls and changing configurations, as needed.",
+                    "Communicates Information About the Incident: Communications about the nature of the incident, recovery actions taken, and activities required for the prevention of future security incidents are made to management and others as appropriate (internal and external).",
+                    "Determines Root Cause of the Incident: The root cause of the incident is determined.",
+                    "Implements Changes to Prevent and Detect Recurrences: Additional architecture or changes to preventive and detective controls are implemented to prevent and detect incident recurrences in a timely manner.",
+                    "Improves Response and Recovery Procedures: Lessons learned are analyzed, and the incident response plan and recovery procedures are improved.",
+                    "Implements Incident Recovery Plan Testing: Incident recovery plan testing is performed on a periodic basis. The testing includes—\n(1) development of testing scenarios based on threat likelihood and magnitude;\n(2) consideration of relevant system components from across the entity that can impair availability;\n(3) scenarios that consider the potential for the lack of availability of key personnel; and\n(4) revision of resilience posture and continuity plans based on test results."
+                ]
+            }
+        },
+        {
+            "description": "The entity authorizes, designs, develops or acquires, configures, documents, tests, approves, and implements changes to infrastructure, data, software, and procedures to meet its objectives.",
+            "ref_code": "CC8.1",
+            "category": "Security",
+            "subcategory": "Change Management",
+            "metadata": {
+                "points_of_focus": [
+                    "Manages Changes Throughout the System Life Cycle - A process for managing system changes throughout the life cycle of the system and its components (infrastructure, data, software, and manual and automated procedures) is used to support the achievement of entity objectives.",
+                    "Authorizes Changes - A process is in place to authorize system and architecture changes prior to design, development, or acquisition and configuration.",
+                    "Designs and Develops Changes - A process is in place to design and develop system changes in a secure manner to support the achievement of entity objectives.",
+                    "Documents Changes - A process is in place to document system changes to support ongoing maintenance of the system and to support internal and external users in performing their responsibilities.",
+                    "Tracks System Changes: A process is in place to track system changes prior to implementation.",
+                    "Configures Software - A process is in place to select, implement, maintain, and monitor configuration parameters used to control the functionality of developed and acquired software.",
+                    "Tests System Changes - A process is in place to test internally developed and acquired system changes prior to implementation into the production environment. Examples of testing may include unit, integration, regression, static and dynamic application source code, quality assurance, or automated testing (whether point in time or continuous).",
+                    "Approves System Changes: A process is in place to approve system changes prior to implementation.",
+                    "Deploys System Changes - A process is in place to implement system changes with consideration of segregation of responsibilities (for example, restricting unilateral code development or testing and implementation by a single user) to prevent or detect unauthorized changes.",
+                    "Identifies and Evaluates System Changes: Objectives affected by system changes are identified, and the ability of the modified system to support the achievement of the objectives is evaluated throughout the system development life cycle.",
+                    "Identifies Changes in Infrastructure, Data, Software, and Procedures Required to Remediate Incidents: Changes in infrastructure, data, software, and procedures required to remediate incidents are identified, and the change process is initiated upon identification.\n– Creates Baseline Configuration of IT Technology: A baseline configuration of IT and control systems is created and maintained.",
+                    "Provides for Changes Necessary in Emergency Situations: A process is in place for authorizing, designing, testing, approving and implementing changes necessary in emergency situations (that is, changes that need to be implemented in an urgent timeframe).",
+                    "Manages Patch Changes - A process is in place to identify, evaluate, test, approve, and implement patches in a timely manner on infrastructure and software.",
+                    "(For Trust Service Criteria of AVAILABVILITY): Considers System Resilience - The entity considers system resilience when designing its systems and tests resilience during development to help ensure the entity�s ability to respond to, recover from, and resume operations through significant disruptions.",
+                    "(For Trust Service Criteria of CONFIDENTIALITY): Protects Confidential Information: The entity protects confidential information during system design, development, testing, implementation, and change processes to support the achievement of the entity's objectives related to confidentiality.",
+                    "(For Trust Service Criteria of PRIVACY): Protects Personal Information: The entity protects personal information during system design, development, testing, implementation, and change processes to support the achievement of the entity's objectives related to privacy.",
+                    "(For Trust Service Criteria of PRIVACY): Privacy by Design - The entity considers privacy requirements in the design of its systems and processes and limits the collection and processing of personal information to what is necessary for the identified purpose."
+                ]
+            }
+        },
+        {
+            "description": "The entity identifies, selects, and develops risk mitigation activities for risks arising from potential business disruptions.",
+            "ref_code": "CC9.1",
+            "category": "Security",
+            "subcategory": "Risk Mitigation",
+            "metadata": {
+                "points_of_focus": [
+                    "Considers the Use of Insurance to Mitigate Financial Impact Risks: The risk management activities consider the use of insurance to offset the financial impact of loss events that would otherwise impair the ability of the entity to support the achievement of its objectives."
+                ]
+            }
+        },
+        {
+            "description": "The entity assesses and manages risks associated with vendors and business partners.",
+            "ref_code": "CC9.2",
+            "category": "Security",
+            "subcategory": "Risk Mitigation",
+            "metadata": {
+                "points_of_focus": [
+                    "Establishes Requirements for Vendor and Business Partner Engagements: The entity establishes specific requirements for vendor and business partner engagements that include—\n(1) scope of services and product specifications,\n(2) roles and responsibilities,\n(3) compliance requirements, and\n(4) service levels.",
+                    "Identifies Vulnerabilities - The entity evaluates vulnerabilities arising from vendor and business partner relationships, including third-party access to the entity�s IT systems and connections with third-party networks.",
+                    "Assesses Vendor and Business Partner Risks - The entity inventories, tiers, and assesses, on a periodic basis, threats arising from relationships with vendors and business partners (and those entities� vendors and business partners) and the vulnerability of the entity's objectives to those threats. Examples of threats arising from relationships with vendors and business partners include those arising from their (1) financial failure, (2) security vulnerabilities, (3) operational disruption, and (4) failure to meet business or regulatory requirements.",
+                    "Assigns Responsibility and Accountability for Managing Vendors and Business Partners: The entity assigns responsibility and accountability for the management of risks and changes to services associated with vendors and business partners.",
+                    "Establishes Communication Protocols for Vendors and Business Partners: The entity establishes communication and resolution protocols for service or product issues related to vendors and business partners.",
+                    "Establishes Exception Handling Procedures From Vendors and Business Partners: The entity establishes exception handling procedures for service or product issues related to vendors and business partners.",
+                    "Assesses Vendor and Business Partner Performance: The entity assesses the performance of vendors and business partnersas frequently as warranted, based on the risk associated with the vendor or business partner.",
+                    "Implements Procedures for Addressing Issues Identified During Vendor and Business Partner Assessments: The entity implements procedures for addressing issues identified with vendor and business partner relationships.",
+                    "Implements Procedures for Terminating Vendor and Business Partner Relationships: The entity implements procedures for terminating vendor and business partner relationships based on predefined considerations. Those procedures may include safe return of data and its removal from the vendor or business partner system.",
+                    "(For Trust Service Criteria of CONFIDENTIALITY): Obtains Confidentiality Commitments From Vendors and Business Partners: The entity obtains confidentiality commitments that are consistent with the entity's confidentiality commitments and requirements from vendors and business partners who have access to confidential information.",
+                    "(For Trust Service Criteria of CONFIDENTIALITY): Assesses Compliance With Confidentiality Commitments of Vendors and Business Partners: On a periodic and as-needed basis, the entity assesses compliance by vendors and business partners with the entity's confidentiality commitments and requirements.",
+                    "(For Trust Service Criteria of PRIVACY): Obtains Privacy Commitments From Vendors and Business Partners: The entity obtains privacy commitments, consistent with the entity's privacy commitments and requirements, from vendors and business partners who have access to personal information.",
+                    "(For Trust Service Criteria of PRIVACY): Assesses Compliance With Privacy Commitments of Vendors and Business Partners: On a periodic and as-needed basis, the entity assesses compliance by vendors and business partners with the entity's privacy commitments and requirements and takes corrective action as necessary."
+                ]
+            }
+        },
+        {
+            "description": "The entity maintains, monitors, and evaluates current processing capacity and use of system components (infrastructure, data, and software) to manage capacity demand and to enable the implementation of additional capacity to help meet its objectives.",
+            "ref_code": "A1.1",
+            "category": "Availability",
+            "subcategory": "Additional Criteria for Availability",
+            "metadata": {
+                "points_of_focus": [
+                    "Measures Current Usage: The use of the system components is measured to establish a baseline for capacity management and to use when monitoring and evaluating the risk of impaired availability due to capacity constraints.",
+                    "Forecasts Capacity: The expected average and peak use of system components is forecasted and compared to system capacity and associated tolerances. Forecasting considers system resilience and capacity in the event of the failure of system components that constrain capacity.",
+                    "Makes Changes Based on Forecasts: The system change management process is initiated when forecasted usage exceeds capacity tolerances."
+                ]
+            }
+        },
+        {
+            "description": "The entity authorizes, designs, develops or acquires, implements, operates, approves, maintains, and monitors environmental protections, software, data backup processes, and recovery infrastructure to meet its objectives.",
+            "ref_code": "A1.2",
+            "category": "Availability",
+            "subcategory": "Additional Criteria for Availability",
+            "metadata": {
+                "points_of_focus": [
+                    "Identifies Environmental Threats: As part of the risk assessment process, management identifies environmental threats that could impair the availability of the system, including threats resulting from adverse weather, failure of environmental control systems,\nelectrical discharge, fire, and water.\n– Designs Detection Measures: Detection measures are implemented to identify anomalies that could result from environmental threat events.",
+                    "Implements and Maintains Environmental Protection Mechanisms: Management implements and maintains environmental protection mechanisms to prevent and mitigate environmental events.",
+                    "Implements Alerts to Analyze Anomalies: Management implements alerts that are communicated to personnel for analysis to identify environmental threat events.\n– Responds to Environmental Threat Events: Procedures are in place for responding to environmental threat events and for evaluating the effectiveness of those policies and procedures on a periodic basis. This includes automatic mitigation systems (for example, uninterruptible power system and generator back-up subsystem).",
+                    "Communicates and Reviews Detected Environmental Threat Events: Detected environmental threat events are communicated to and reviewed by the individuals responsible for the management of the system, and actions are taken, if necessary.",
+                    "Determines Data Requiring Backup: Data is evaluated to determine whether backup is required.",
+                    "Performs Data Backup: Procedures are in place for backing up data, monitoring to detect back-up failures, and initiating corrective action when such failures occur.",
+                    "Addresses Offsite Storage: Back-up data is stored in a location at a distance from its principal storage location sufficient that the likelihood of a security or environmental threat event affecting both sets of data is reduced to an appropriate level.",
+                    "Implements Alternate Processing Infrastructure: Measures are implemented for migrating processing to alternate infrastructure in the event normal processing infrastructure becomes unavailable. Measures may include geographic separation, redundancy, and failover capabilities for components.",
+                    "Considers Data Recoverability - Management identifies threats to data recoverability (for example, ransomware attacks) that could impair the availability of the system and related data and implements mitigation procedures."
+                ]
+            }
+        },
+        {
+            "description": "The entity tests recovery plan procedures supporting system recovery to meet its objectives.",
+            "ref_code": "A1.3",
+            "category": "Availability",
+            "subcategory": "Additional Criteria for Availability",
+            "metadata": {
+                "points_of_focus": [
+                    "Implements Business Continuity Plan Testing: Business continuity plan testing is performed on a periodic basis to test the entity's ability to respond, recover from, and resume operations through significant disruptions. Testing includes\n(1) development of testing scenarios based on threat likelihood and magnitude;\n(2) consideration of system components from across the entity and vendors that can impair availability;\n(3) scenarios that consider the potential for the lack of availability of key personnel or vendors; and\n(4) revision of continuity plans and systems based on test results.",
+                    "Tests Integrity and Completeness of Back-Up Data: The integrity and completeness of back-up information is tested on a periodic basis."
+                ]
+            }
+        },
+        {
+            "description": "The entity identifies and maintains confidential information to meet the entity’s objectives related to confidentiality.",
+            "ref_code": "C1.1",
+            "category": "Confidentiality",
+            "subcategory": "Additional Criteria for Confidentiality",
+            "metadata": {
+                "points_of_focus": [
+                    "Defines and Identifies Confidential information: Procedures are in place to define, identify and designate confidential information when it is received or created.",
+                    "Retains Confidential Information - Confidential information is retained for no longer than necessary to fulfill the identified purpose, unless a law or regulation specifically requires otherwise.",
+                    "Protects Confidential Information from Destruction: Policies and procedures are in place to protect confidential information from erasure or destruction during the specified retention period of the information."
+                ]
+            }
+        },
+        {
+            "description": "The entity disposes of confidential information to meet the entity’s objectives related to confidentiality.",
+            "ref_code": "C1.2",
+            "category": "Confidentiality",
+            "subcategory": "Additional Criteria for Confidentiality",
+            "metadata": {
+                "points_of_focus": [
+                    "Identifies Confidential Information for Destruction: Procedures are in place to identify confidential information requiring destruction when the end of the retention period is reached.",
+                    "Destroys Confidential Information: Policies and procedures are in place to automatically or manually erase or otherwise destroy confidential information that has been identified for destruction."
+                ]
+            }
+        },
+        {
+            "description": "The entity obtains or generates, uses, and communicates relevant, quality information regarding the objectives related to processing, including definitions of data processed and product and service specifications, to support the use of products and services.",
+            "ref_code": "PI1.1",
+            "category": "Processing Integrity",
+            "subcategory": "Additional Criteria for Processing Integrity (over the provision of services or the production, manufacturing or distribution of goods)",
+            "metadata": {}
+        },
+        {
+            "description": "The entity implements policies and procedures over system inputs, including controls over completeness and accuracy, to result in products, services, and reporting to meet the entity’s objectives.",
+            "ref_code": "PI1.2",
+            "category": "Processing Integrity",
+            "subcategory": "Additional Criteria for Processing Integrity (over the provision of services or the production, manufacturing or distribution of goods)",
+            "metadata": {
+                "points_of_focus": [
+                    "Creates and Maintains Records of System Inputs: Records of system input activities are created and maintained completely and accurately in a timely manner."
+                ]
+            }
+        },
+        {
+            "description": "The entity implements policies and procedures over system processing to result in products, services, and reporting to meet the entity’s objectives.",
+            "ref_code": "PI1.3",
+            "category": "Processing Integrity",
+            "subcategory": "Additional Criteria for Processing Integrity (over the provision of services or the production, manufacturing or distribution of goods)",
+            "metadata": {
+                "points_of_focus": [
+                    "Defines Processing Specifications: The processing specifications that are necessary to meet product or service requirements are defined.",
+                    "Defines Processing Activities: Processing activities are defined to result in products or services that meet specifications.",
+                    "Detects and Corrects Processing or Production Activity Errors: Errors encountered in processing or production activities are detected and corrected in a timely manner.",
+                    "Records System Processing Activities: System processing activities are recorded completely and accurately in a timely manner.",
+                    "Processes Inputs: Inputs are processed completely, accurately, and timely as authorized in accordance with defined processing activities."
+                ]
+            }
+        },
+        {
+            "description": "The entity implements policies and procedures to make available or deliver output completely, accurately, and timely in accordance with specifications to meet the entity’s objectives.",
+            "ref_code": "PI1.4",
+            "category": "Processing Integrity",
+            "subcategory": "Additional Criteria for Processing Integrity (over the provision of services or the production, manufacturing or distribution of goods)",
+            "metadata": {
+                "points_of_focus": [
+                    "Protects Output: Output is protected when stored or delivered, or both, to prevent theft, destruction, corruption, or deterioration that would prevent output from meeting specifications.",
+                    "Distributes Output Only to Intended Parties: Output is distributed or made available only to intended parties.",
+                    "Distributes Output Completely and Accurately: Procedures are in place to provide for the completeness, accuracy, and timeliness of distributed output.",
+                    "Creates and Maintains Records of System Output Activities: Records of system output activities are created and maintained completely and accurately in a timely manner."
+                ]
+            }
+        },
+        {
+            "description": "The entity implements policies and procedures to store inputs, items in processing, and outputs completely, accurately, and timely in accordance with system specifications to meet the entity’s objectives.",
+            "ref_code": "PI1.5",
+            "category": "Processing Integrity",
+            "subcategory": "Additional Criteria for Processing Integrity (over the provision of services or the production, manufacturing or distribution of goods)",
+            "metadata": {
+                "points_of_focus": [
+                    "Protects Stored Items: Stored items are protected to prevent theft, corruption, destruction, or deterioration that would prevent output from meeting specifications.",
+                    "Archives and Protects System Records: System records are archived, and archives are protected against theft, corruption, destruction, or deterioration that would prevent them from being used.\n– Stores Data Completely and Accurately: Procedures are in place to provide for the complete, accurate, and timely storage of data.",
+                    "Creates and Maintains Records of System Storage Activities: Records of system storage activities are created and maintained completely and accurately in a timely manner."
+                ]
+            }
+        },
+        {
+            "description": "The entity provides notice to data subjects about its privacy practices to meet the entity’s objectives related to privacy. The notice is updated and communicated to data subjects in a timely manner for changes to the entity’s privacy practices, including changes in the use of personal information, to meet the entity’s objectives related to privacy.",
+            "ref_code": "P1.1",
+            "category": "Privacy",
+            "subcategory": "Privacy Criteria Related to Notice and Communication of Objectives Related to Privacy",
+            "metadata": {
+                "points_of_focus": [
+                    "Provides Notice to Data Subjects [C]: Notice is provided to data subjects—\n(1) at or before the time personal information is collected or as soon as practical thereafter,\n(2) at or before the entity changes its privacy notice or as soon as practical thereafter, or\n(3) before personal information is used for new purposes not previously identified.",
+                    "Covers Entities and Activities in Notice [C]: An objective description of the entities and activities covered is included in the entity's privacy notice.",
+                    "Uses Clear Language and Presents a Current Privacy Notice in a Location Easily Found by Data Subjects [C] - The entity�s privacy notice is current, dated, uses clear language, and is in a location that can be easily found by data subjects.",
+                    "Reviews the Privacy Notice [C] - A process is defined to periodically review the content of the privacy notice and to implement any identified updates.",
+                    "Communicates Changes to Notice [C] - Data subjects are informed when changes are made to the privacy notice and the nature of such changes.",
+                    "Retains Prior Notices [C] - Prior versions of the privacy notice are retained in accordance with internal requirements to document prior communications.\n"
+                ]
+            }
+        },
+        {
+            "description": "The entity communicates choices available regarding the collection, use, retention, disclosure, and disposal of personal information to the data subjects and the consequences, if any, of each choice. Explicit consent for the collection, use, retention, disclosure, and disposal of personal information is obtained from data subjects or other authorized persons, if required. Such consent is obtained only for the intended purpose of the information to meet the entity’s objectives related to privacy. The entity’s basis for determining implicit consent for the collection, use, retention, disclosure, and disposal of personal information is documented.",
+            "ref_code": "P2.1",
+            "category": "Privacy",
+            "subcategory": "Privacy Criteria Related to Choice and Consent",
+            "metadata": {
+                "points_of_focus": [
+                    "Communicates to Data Subjects [C]: Data subjects are informed—\n(a) about the choices available to them with respect to the collection, use, and disclosure of personal information and\n(b) that implicit or explicit consent is required to collect, use, and disclose personal information, unless a law or regulation specifically requires or allows otherwise.",
+                    "Communicates Consequences of Denying or Withdrawing Consent [C]: When personal information is collected, data subjects are informed of the consequences of refusing to provide personal information or denying or withdrawing consent to use personal information for purposes identified in the notice.",
+                    "Obtains Implicit or Explicit Consent [C]: Implicit or explicit consent is obtained from data subjects at or before the time personal information is collected or soon thereafter. The individual's preferences expressed in his or her consent are confirmed and implemented.",
+                    "Documents and Obtains Consent for New Purposes and Uses [C]: If information that was previously collected is to be used for purposes not previously identified in the privacy notice, the new purpose is documented, the data subject is notified, and implicit or explicit consent is obtained prior to such new use or purpose.",
+                    "Obtains Explicit Consent for Sensitive Information [C]: Explicit consent is obtained directly from the data subject when sensitive personal information is collected, used, or disclosed, unless a law or regulation specifically requires otherwise.",
+                    "Obtains Consent for Data Transfers [C]: Consent is obtained before personal information is transferred to or from an individual's device."
+                ]
+            }
+        },
+        {
+            "description": "Personal information is collected consistent with the entity’s objectives related to privacy.",
+            "ref_code": "P3.1",
+            "category": "Privacy",
+            "subcategory": "Privacy Criteria Related to Collection",
+            "metadata": {
+                "points_of_focus": [
+                    "Limits the Collection of Personal Information [P][C]: The collection of personal information is limited to that necessary to support the achievement of the entity's objectives.",
+                    "Collects Information by Fair and Lawful Means [P][C]: Methods of collecting personal information are reviewed by management before they are implemented to confirm that personal information is obtained— \n(a) fairly, without intimidation or deception, and\n(b) lawfully, adhering to all relevant rules of law, whether derived from statute or common law, relating to the collection of personal information.",
+                    "Collects Information From Reliable Sources [P][C]: Management confirms that third parties from whom personal information is collected (that is, sources other than the individual) are reliable sources that collect information fairly and lawfully.",
+                    "Informs Data Subjects When Additional Information Is Acquired [P][C]: Data subjects are informed if the entity develops or acquires additional information about them for its use."
+                ]
+            }
+        },
+        {
+            "description": "For information requiring explicit consent, the entity communicates the need for such consent, as well as the consequences of a failure to provide consent for the request for personal information, and obtains the consent prior to the collection of the information to meet the entity’s objectives related to privacy.",
+            "ref_code": "P3.2",
+            "category": "Privacy",
+            "subcategory": "Privacy Criteria Related to Collection",
+            "metadata": {
+                "points_of_focus": [
+                    "Informs Data Subjects of Consequences of Failure to Provide Consent [C] - Data subjects are informed of the consequences of failing to provide the entity with explicit consent.",
+                    "Documents Explicit Consent to Retain Information [C]: Documentation of explicit consent for the collection, use, or disclosure of sensitive personal information is retained to support the achievement of entity objectives related to privacy."
+                ]
+            }
+        },
+        {
+            "description": "The entity limits the use of personal information to the purposes identified in the entity’s objectives related to privacy.",
+            "ref_code": "P4.1",
+            "category": "Privacy",
+            "subcategory": "Privacy Criteria Related to Use, Retention, and Disposal",
+            "metadata": {
+                "points_of_focus": [
+                    "Uses Personal Information for Intended Purposes [P][C]: Personal information is used only for the intended purposes for which it was collected and only when implicit or explicit consent has been obtained unless a law or regulation specifically requires otherwise."
+                ]
+            }
+        },
+        {
+            "description": "The entity retains personal information consistent with the entity’s objectives related to privacy.",
+            "ref_code": "P4.2",
+            "category": "Privacy",
+            "subcategory": "Privacy Criteria Related to Use, Retention, and Disposal",
+            "metadata": {
+                "points_of_focus": [
+                    "Retains Personal Information [P][C]: Personal information is retained for no longer than necessary to fulfill the stated purposes, unless a law or regulation specifically requires otherwise.",
+                    "Protects Personal Information [P][C]: Policies and procedures have been implemented to protect personal information from erasure or destruction during the specified retention period of the information."
+                ]
+            }
+        },
+        {
+            "description": "The entity securely disposes of personal information to meet the entity’s objectives related to privacy.",
+            "ref_code": "P4.3",
+            "category": "Privacy",
+            "subcategory": "Privacy Criteria Related to Use, Retention, and Disposal",
+            "metadata": {
+                "points_of_focus": [
+                    "Captures, Identifies, and Flags Requests for Deletion [P][C]: Requests for deletion of personal information are captured, and information related to the requests is identified and flagged for destruction to support the achievement of the entity's objectives related to privacy.",
+                    "Disposes of, Destroys, and Redacts Personal Information [P][C]: Personal information no longer retained is anonymized, disposed of, or destroyed in a manner that prevents loss, theft, misuse, or unauthorized access.",
+                    "Destroys Personal Information [P][C]: Policies and procedures are implemented to erase or otherwise destroy personal information that has been identified for destruction."
+                ]
+            }
+        },
+        {
+            "description": "The entity grants identified and authenticated data subjects the ability to access their stored personal information for review and, upon request, provides physical or electronic copies of that information to data subjects to meet the entity’s objectives related to privacy. If access is denied, data subjects are informed of the denial and reason for such denial, as required, to meet the entity’s objectives related to privacy.",
+            "ref_code": "P5.1",
+            "category": "Privacy",
+            "subcategory": "Privacy Criteria Related to Access",
+            "metadata": {
+                "points_of_focus": [
+                    "Responds to Data Controller Requests [P] - The entity has a process to respond to data subject requests received from data controllers in accordance with service agreements and privacy objectives. Such process may include authentication of the request, permitting access where appropriate, responding within a reasonable time, and notification if the request is denied.",
+                    "Authenticates Data Subjects' Identity [P][C]: The identity of data subjects who request access to their personal information is authenticated before they are given access to that information.",
+                    "Permits Data Subjects Access to Their Personal Information [P][C]: Data subjects are able to determine whether the entity maintains personal information about them and, upon request, may obtain access to their personal information.",
+                    "Provides Understandable Personal Information Within Reasonable Time [P][C]: Personal information is provided to data subjects in an understandable form, in a reasonable time frame, and at a reasonable cost, if any.",
+                    "Informs Data Subjects If Access Is Denied [P][C]: When data subjects are denied access to their personal information, the entity informs them of the denial and the reason for the denial in a timely manner, unless prohibited by law or regulation."
+                ]
+            }
+        },
+        {
+            "description": "The entity corrects, amends, or appends personal information based on information provided by data subjects and communicates such information to third parties, as committed or required, to meet the entity’s objectives related to privacy. If a request for correction is denied, data subjects are informed of the denial and reason for such denial to meet the entity’s objectives related to privacy.",
+            "ref_code": "P5.2",
+            "category": "Privacy",
+            "subcategory": "Privacy Criteria Related to Access",
+            "metadata": {
+                "points_of_focus": [
+                    "Responds to Data Controller Requests [P] - The entity has a process to respond to data controllers� update requests, including updates to personal information and denial of requests, in accordance with service agreements to support the achievement of the entity�s objectives related to privacy.",
+                    "Communicates Denial of Access Requests [P][C]: Data subjects are informed, in writing, of the reason a request for access to their personal information was denied, the source of the entity's legal right to deny such access, if applicable, and the individual's right, if any, to challenge such denial, as specifically permitted or required by law or regulation.",
+                    "Permits Data Subjects to Update or Correct Personal Information [P][C]: Data subjects are able to update or correct personal information held by the entity. The entity provides informationcommunicates updates, corrections, and deletion requests to third parties that were previously provided with the data subject's personal information consistent with the entity's objectives related to privacy.",
+                    "Communicates Denial of Correction Requests [P][C]: Data subjects are informed, in writing, about the reason a request for correction of personal information was denied and how they may appeal. "
+                ]
+            }
+        },
+        {
+            "description": "The entity discloses personal information to third parties with the explicit consent of data subjects, and such consent is obtained prior to disclosure to meet the entity’s objectives related to privacy.",
+            "ref_code": "P6.1",
+            "category": "Privacy",
+            "subcategory": "Privacy Criteria Related to Disclosure and Notification",
+            "metadata": {
+                "points_of_focus": [
+                    "Communicates Privacy Policies to Third Parties [P][C]: Privacy policies or other specific instructions or requirements for handling personal information are communicated to third parties to whom personal information is disclosed.",
+                    "Discloses Personal Information Only When Appropriate [P][C]: Personal information is disclosed to third parties only for the purposes for which it was collected or created and only when implicit or explicit consent has been obtained from the data subject, unless a law or regulation specifically requires otherwise.",
+                    "Discloses Personal Information Only to Appropriate Third Parties [P][C]: Personal information is disclosed only to third parties who have agreements with the entity to protect personal information in a manner consistent with the relevant aspects of the entity's privacy notice or other specific instructions or requirements. ",
+                    "Discloses Information to Third Parties for New Purposes and Uses [P][C]: Personal information is disclosed to third parties for new purposes or uses only with the prior implicit or explicit consent of data subjects."
+                ]
+            }
+        },
+        {
+            "description": "The entity creates and retains a complete, accurate, and timely record of authorized disclosures of personal information to meet the entity’s objectives related to privacy.",
+            "ref_code": "P6.2",
+            "category": "Privacy",
+            "subcategory": "Privacy Criteria Related to Disclosure and Notification",
+            "metadata": {
+                "points_of_focus": [
+                    "Creates and Retains Record of Authorized Disclosures [P][C]: The entity creates and maintains a record of authorized disclosures of personal information that is complete, accurate, and timely."
+                ]
+            }
+        },
+        {
+            "description": "The entity creates and retains a complete, accurate, and timely record of detected or reported unauthorized disclosures (including breaches) of personal information to meet the entity’s objectives related to privacy.",
+            "ref_code": "P6.3",
+            "category": "Privacy",
+            "subcategory": "Privacy Criteria Related to Disclosure and Notification",
+            "metadata": {
+                "points_of_focus": [
+                    "Creates and Retains Record of Detected or Reported Unauthorized Disclosures [P][C]: The entity creates and maintains a record of detected or reported unauthorized disclosures of personal information that is complete, accurate, and timely."
+                ]
+            }
+        },
+        {
+            "description": "The entity obtains privacy commitments from vendors and other third parties who have access to personal information to meet the entity’s objectives related to privacy. The entity assesses those parties’ compliance on a periodic and as-needed basis and takes corrective action, if necessary.",
+            "ref_code": "P6.4",
+            "category": "Privacy",
+            "subcategory": "Privacy Criteria Related to Disclosure and Notification",
+            "metadata": {
+                "points_of_focus": [
+                    "Evaluates Third-Party Compliance With Privacy Commitments [P][C] - The entity has procedures in place to evaluate whether third parties have effective controls to meet the terms of the agreement, instructions, or requirements.",
+                    "Remediates Misuse of Personal Information by a Third Party [P][C]: The entity takes remedial action in response to misuse of personal information by a third party to whom the entity has transferred such information.",
+                    "Obtains Commitments to Report Unauthorized Disclosures [P][C] - A process exists for obtaining commitments from vendors and other third parties to report to the entity actual or suspected unauthorized disclosures of personal information."
+                ]
+            }
+        },
+        {
+            "description": "The entity obtains commitments from vendors and other third parties with access to personal information to notify the entity in the event of actual or suspected unauthorized disclosures of personal information. Such notifications are reported to appropriate personnel and acted on in accordance with established incident response procedures to meet the entity’s objectives related to privacy.",
+            "ref_code": "P6.5",
+            "category": "Privacy",
+            "subcategory": "Privacy Criteria Related to Disclosure and Notification",
+            "metadata": {
+                "points_of_focus": [
+                    "Remediates Misuse of Personal Information by a Third Party [P][C]: The entity takes remedial action in response to misuse of personal information by a third party to whom the entity has transferred such information.",
+                    "Reports Actual or Suspected Unauthorized Disclosures [P][C]: A process exists for obtaining commitments from vendors and other third parties to report to the entity actual or suspected unauthorized disclosures of personal information."
+                ]
+            }
+        },
+        {
+            "description": "The entity provides notification of breaches and incidents to affected data subjects, regulators, and others to meet the entity’s objectives related to privacy.",
+            "ref_code": "P6.6",
+            "category": "Privacy",
+            "subcategory": "Privacy Criteria Related to Disclosure and Notification",
+            "metadata": {
+                "points_of_focus": [
+                    "Identifies Reporting Requirements [P][C] - The entity has a process for determining whether notification of a privacy breach is required, including the method to be used, the timeline, and the identification of recipients of such notifications.",
+                    "Provides Notice of Breaches and Incidents[P][C]: The entity has a process for providing notice of breaches and incidents to affected data subjects, regulators, and others to support the achievement of the entity's objectives related to privacy."
+                ]
+            }
+        },
+        {
+            "description": "The entity provides data subjects with an accounting of the personal information held and disclosure of the data subjects’ personal information, upon the data subjects’ request, to meet the entity’s objectives related to privacy.",
+            "ref_code": "P6.7",
+            "category": "Privacy",
+            "subcategory": "Privacy Criteria Related to Disclosure and Notification",
+            "metadata": {
+                "points_of_focus": [
+                    "Responds to Data Controller Requests [P] - The entity has a process to respond to data controller requests for an accounting of personal information held in accordance with service agreements and privacy objectives.",
+                    "Identifies Types of Personal Information and Handling Process[P][C]: The types of personal information and sensitive personal information and the related processes, systems, and third parties involved in the handling of such information are identified.",
+                    "Captures, Identifies, and Communicates Requests for Information[P][C]: Requests for an accounting of personal information held and disclosures of the data subjects' personal information are captured, and information related to the requests is identified and communicated to data subjects to support the achievement of the entity's objectives related to privacy."
+                ]
+            }
+        },
+        {
+            "description": "The entity collects and maintains accurate, up-to-date, complete, and relevant personal information to meet the entity’s objectives related to privacy.",
+            "ref_code": "P7.1",
+            "category": "Privacy",
+            "subcategory": "Privacy Criteria Related to Quality",
+            "metadata": {
+                "points_of_focus": [
+                    "Ensures Accuracy and Completeness of Personal Information [P][C]: Personal information is accurate and complete for the purposes for which it is to be used.",
+                    "Ensures Relevance of Personal Information [P][C]: Personal information is relevant to the purposes for which it is to be used."
+                ]
+            }
+        },
+        {
+            "description": "The entity implements a process for receiving, addressing, resolving, and communicating the resolution of inquiries, complaints, and disputes from data subjects and others and periodically monitors compliance to meet the entity’s objectives related to privacy. Corrections and other necessary actions related to identified deficiencies are made or taken in a timely manner.",
+            "ref_code": "P8.1",
+            "category": "Privacy",
+            "subcategory": "Privacy Criteria Related to Monitoring and Enforcement",
+            "metadata": {
+                "points_of_focus": [
+                    "Communicates to Data Subjects or Data Controllers [P][C]: Data subjects or data controllers are informed about how to contact the entity with inquiries, complaints, and disputes.\n– Addresses Inquiries, Complaints, and Disputes[P][C]: A process is in place to address inquiries, complaints, and disputes.",
+                    "Documents and Communicates Dispute Resolution and Recourse[P][C]: Each complaint is addressed, and the resolution is documented and communicated to the individual.",
+                    "Documents and Reports Compliance Review Results[P][C]: Compliance with objectives related to privacy are reviewed and documented, and the results of such reviews are reported to management. If problems are identified, remediation plans are developed and implemented.",
+                    "Documents and Reports Instances of Noncompliance[P][C]: Instances of noncompliance with objectives related to privacy are documented and reported and, if needed, corrective and disciplinary measures are taken on a timely basis.",
+                    "Performs Ongoing Monitoring[P][C]: Ongoing procedures are performed for monitoring the effectiveness of controls over personal information and for taking timely corrective actions when necessary."
+                ]
+            }
+        }
+    ]
+}

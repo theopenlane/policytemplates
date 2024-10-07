@@ -14,7 +14,22 @@ including:
 
 There is a `cli` included to generate and validate standards based on a csv
 input. This will parse the data in the provided format and output to a standard
-which must conform to the [jsonschema](standards/jsonschema/standards.json)
+which must conform to the [jsonschema](schema/jsonschema/frameworks.json)
+
+### Schema
+
+1. Run `task schema` to regenerate the jsonschema(s) based on the framework go
+   structs
+
+   ```
+   task schema
+   task: [schema] go run main.go schema
+   12:55PM INF generating schema
+   12:55PM INF writing schema to file
+   12:55PM INF schema generated successfully file location=schema/jsonschema/frameworks.json
+   ```
+
+### Parse
 
 1. Run `task parse` (or you can run `go run main.go parse` directly), which will
    bring up a cli prompt

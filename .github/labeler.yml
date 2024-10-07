@@ -7,6 +7,7 @@ enhancement:
 # Add 'breaking-change' label to any PR where the head branch name starts with `breaking-change` or has a `breaking-change` section in the name
 breaking-change:
   - head-branch: ["^breaking-change", "breaking-change"]
+# Add 'dependencies' label to any PR where the head branch name starts with `dependencies` or has a `dependencies` section in the name
 dependencies:
   - head-branch: ["^dependencies", "dependencies", "^deps", "deps"]
 ci:
@@ -21,7 +22,13 @@ templates:
       - any-glob-to-any-file: templates/**
 soc2:
   - changed-files:
-      - any-glob-to-any-file: soc2**
-nist:
+      - any-glob-to-any-file: frameworks/soc2/**
+nist-800-53:
   - changed-files:
-      - any-glob-to-any-file: nist**
+      - any-glob-to-any-file: frameworks/nist80053/**
+nist-csf:
+  - changed-files:
+      - any-glob-to-any-file: frameworks/nistcsf/**
+jsonschema:
+  - changed-files:
+      - any-glob-to-any-file: schema/jsonschema/**

@@ -1,4 +1,4 @@
-package standards
+package nistcsf
 
 import (
 	"encoding/csv"
@@ -6,15 +6,18 @@ import (
 	"strings"
 
 	"github.com/stoewer/go-strcase"
+
+	"github.com/theopenlane/policytemplates/frameworks"
+	"github.com/theopenlane/policytemplates/schema"
 )
 
-// NISTCSFMetadata contains the metadata for a NIST CSF control type
-type NISTCSFMetadata struct {
+// Metadata contains the metadata for a NIST CSF control type
+type Metadata struct {
 	References []string `json:"references,omitempty"`
 }
 
 // nistCsfParseCSV parses the NIST CSF CSV file and returns a slice of controls in a standard format
-func nistCsfParseCSV(file string) (s []Control[NISTCSFMetadata], err error) {
+func nistCsfParseCSV(file string) (s []schema.Control[Metadata], err error) {
 	// Open the file
 	f, err := os.Open(file)
 	if err != nil {
@@ -53,44 +56,44 @@ func nistCsfParseCSV(file string) (s []Control[NISTCSFMetadata], err error) {
 			// function is the top-level category but has no description
 			category, refCode, _ = parseCategory(record[0])
 
-			control := Control[NISTCSFMetadata]{
+			control := schema.Control[Metadata]{
 				RefCode:  refCode,
 				Category: category,
 			}
 
 			// append the control to the slice
-			s = appendSubControl(refCode, control, s)
+			s = frameworks.AppendSubControl(refCode, control, s)
 		}
 
 		// get the category (subcategory) for the first child control
 		// the category is the same as the parent control
 		if record[1] != "" {
 			subcategory, childRefCode, description = parseCategory(record[1])
-			subControl := Control[NISTCSFMetadata]{
+			subControl := schema.Control[Metadata]{
 				RefCode:     childRefCode,
 				Category:    category,
 				Subcategory: subcategory,
 				Description: description,
 			}
 
-			s = appendSubControl(refCode, subControl, s)
+			s = frameworks.AppendSubControl(refCode, subControl, s)
 		}
 
 		if record[2] != "" {
 			ref := strings.Split(record[2], ":")
 			subChildRefCode = ref[0]
 
-			control := Control[NISTCSFMetadata]{
+			control := schema.Control[Metadata]{
 				RefCode:     subChildRefCode,
 				Category:    category,
 				Subcategory: subcategory,
 				Description: strings.TrimSpace(ref[1]),
-				MetaData: NISTCSFMetadata{
+				Metadata: Metadata{
 					References: []string{},
 				},
 			}
 
-			s = appendSubControl(childRefCode, control, s)
+			s = frameworks.AppendSubControl(childRefCode, control, s)
 		}
 
 		if record[3] != "" {
@@ -127,10 +130,10 @@ func parseCategory(record string) (category string, recCode string, description 
 }
 
 // addReferencesToControl adds a reference to a control (or nested subcontrol) based on the ref code
-func addReferencesToControl(reference string, refCode string, s []Control[NISTCSFMetadata]) []Control[NISTCSFMetadata] {
+func addReferencesToControl(reference string, refCode string, s []schema.Control[Metadata]) []schema.Control[Metadata] {
 	for i, v := range s {
 		if v.RefCode == refCode {
-			v.MetaData.References = append(v.MetaData.References, reference)
+			v.Metadata.References = append(v.Metadata.References, reference)
 
 			s[i] = v
 
@@ -138,7 +141,7 @@ func addReferencesToControl(reference string, refCode string, s []Control[NISTCS
 		}
 
 		for j, sub := range v.SubControls {
-			out := addReferencesToControl(reference, refCode, []Control[NISTCSFMetadata]{sub})
+			out := addReferencesToControl(reference, refCode, []schema.Control[Metadata]{sub})
 
 			s[i].SubControls[j] = out[0]
 		}

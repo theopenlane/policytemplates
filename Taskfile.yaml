@@ -14,6 +14,11 @@ tasks:
     cmds:
       - go run main.go parse
 
+  schema:
+    desc: generate the schema for the audit standard
+    cmds:
+      - go run main.go schema
+
   ## Go tasks
   go:lint:
     desc: runs golangci-lint, the most annoying opinionated linter ever

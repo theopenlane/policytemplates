@@ -1,5 +1,6 @@
 {
     "name": "NIST Cybersecurity Framework",
+    "framework": "nist_csf",
     "version": "1.1",
     "web_link": "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.04162018.pdf",
     "controls": [

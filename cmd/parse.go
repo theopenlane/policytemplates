@@ -7,19 +7,23 @@ import (
 	"github.com/spf13/cobra"
 
 	"github.com/theopenlane/policytemplates/cmd/prompts"
-	"github.com/theopenlane/policytemplates/standards"
+	"github.com/theopenlane/policytemplates/frameworks/nist80053"
+	"github.com/theopenlane/policytemplates/frameworks/nistcsf"
+	"github.com/theopenlane/policytemplates/frameworks/soc2"
 )
 
+// parseCmd represents the parse command for parsing compliance frameworks from csv files to a standardized JSON format
 var parseCmd = &cobra.Command{
 	Use:   "parse",
-	Short: "parse compliance standards",
-	Long:  `parse compliance standards and output the results in a json format.`,
+	Short: "parse compliance frameworks",
+	Long:  `parse compliance frameworks and output the results in a json format.`,
 	Run: func(cmd *cobra.Command, args []string) {
 		err := parse()
 		cobra.CheckErr(err)
 	},
 }
 
+// init initializes the parse command
 func init() {
 	rootCmd.AddCommand(parseCmd)
 
@@ -29,6 +33,7 @@ func init() {
 	parseCmd.Flags().BoolP("interactive", "i", true, "interactive prompt, set to false to disable")
 }
 
+// parse parses the compliance frameworks
 func parse() error {
 	framework := config.String("framework")
 	format := config.String("output")
@@ -42,7 +47,7 @@ func parse() error {
 		cobra.CheckErr(err)
 	}
 
-	log.Info().Str("framework", framework).Str("format", format).Msg("parsing compliance standards")
+	log.Info().Str("framework", framework).Str("format", format).Msg("parsing compliance frameworks")
 
 	var (
 		controls any
@@ -51,20 +56,20 @@ func parse() error {
 
 	switch framework {
 	case "soc2":
-		controls, err = standards.GenerateSOC2Standards()
+		controls, err = soc2.Generate()
 		cobra.CheckErr(err)
 
-		filename = "templates/standards/soc2-2022.json"
+		filename = "templates/frameworks/soc2-2022.json"
 	case "nist-csf":
-		controls, err = standards.GenerateNISTCSFStandards()
+		controls, err = nistcsf.Generate()
 		cobra.CheckErr(err)
 
-		filename = "templates/standards/nist-csf-1.1.json"
+		filename = "templates/frameworks/nist-csf-1.1.json"
 	case "nist-800-53":
-		controls, err = standards.GenerateNist80053Standards()
+		controls, err = nist80053.Generate()
 		cobra.CheckErr(err)
 
-		filename = "templates/standards/nist-800-53-5.json"
+		filename = "templates/frameworks/nist-800-53-5.json"
 	default:
 		log.Error().Str("framework", framework).Msg("framework not found")
 
@@ -75,7 +80,7 @@ func parse() error {
 		err := saveToFile(controls, filename)
 		cobra.CheckErr(err)
 
-		log.Info().Str("filename", filename).Msg("standards saved to file")
+		log.Info().Str("filename", filename).Msg("frameworks saved to file")
 
 		return nil
 	}

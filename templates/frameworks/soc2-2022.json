@@ -1,5 +1,6 @@
 {
     "name": "SOC 2",
+    "framework": "soc2",
     "version": "2017 - with revised points of focus 2022",
     "web_link": "https://www.aicpa-cima.com/resources/download/2017-trust-services-criteria-with-revised-points-of-focus-2022",
     "controls": [

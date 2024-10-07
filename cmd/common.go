@@ -40,7 +40,7 @@ func saveToFile(out any, path string) error {
 	s, err := json.MarshalIndent(out, "", "    ")
 	cobra.CheckErr(err)
 
-	err = os.WriteFile(path, s, 0644) //nolint: gosec,mnd
+	err = os.WriteFile(path, s, 0600) //nolint:mnd
 
 	return err
 }

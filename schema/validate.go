@@ -1,16 +1,16 @@
-package standards
+package schema
 
 import (
 	"github.com/rs/zerolog/log"
 )
 
-// validateStandards validates the provided standards against a predefined JSON schema.
+// Validate validates the provided standards against a predefined JSON schema.
 // Returns nil if the standards are valid, otherwise returns an error
 // containing the validation errors.
-func validateStandards[T any](standards Standard[T]) error {
+func Validate[T any](standards Framework[T]) error {
 	log.Info().Msg("validating standards against schema")
 
-	schema, err := loadEmbeddedSchema("jsonschema/standards.json")
+	schema, err := loadEmbeddedSchema("jsonschema/frameworks.json")
 	if err != nil {
 		return err
 	}

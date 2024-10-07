@@ -1,4 +1,4 @@
-package standards
+package soc2
 
 import (
 	"testing"

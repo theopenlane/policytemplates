@@ -1,9 +1,11 @@
-package standards
+package nistcsf
 
 import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
+
+	"github.com/theopenlane/policytemplates/schema"
 )
 
 func TestParseCategory(t *testing.T) {
@@ -46,17 +48,17 @@ func TestAddReferencesToControl(t *testing.T) {
 
 	tests := []struct {
 		name             string
-		initialControls  []Control[NISTCSFMetadata]
+		initialControls  []schema.Control[Metadata]
 		refCode          string
-		expectedControls []Control[NISTCSFMetadata]
+		expectedControls []schema.Control[Metadata]
 	}{
 		{
 			name: "add reference to existing subcontrol",
-			initialControls: []Control[NISTCSFMetadata]{
+			initialControls: []schema.Control[Metadata]{
 				{
 					RefCode:  "ID",
 					Category: "Identify",
-					SubControls: []Control[NISTCSFMetadata]{
+					SubControls: []schema.Control[Metadata]{
 						{
 							RefCode:     "ID.AM",
 							Category:    "Identify",
@@ -66,16 +68,16 @@ func TestAddReferencesToControl(t *testing.T) {
 				},
 			},
 			refCode: "ID.AM",
-			expectedControls: []Control[NISTCSFMetadata]{
+			expectedControls: []schema.Control[Metadata]{
 				{
 					RefCode:  "ID",
 					Category: "Identify",
-					SubControls: []Control[NISTCSFMetadata]{
+					SubControls: []schema.Control[Metadata]{
 						{
 							RefCode:     "ID.AM",
 							Category:    "Identify",
 							Subcategory: "Asset Management",
-							MetaData: NISTCSFMetadata{
+							Metadata: Metadata{
 								References: []string{reference},
 							},
 						},
@@ -85,18 +87,18 @@ func TestAddReferencesToControl(t *testing.T) {
 		},
 		{
 			name: "add reference to existing control",
-			initialControls: []Control[NISTCSFMetadata]{
+			initialControls: []schema.Control[Metadata]{
 				{
 					RefCode:  "ID",
 					Category: "Identify",
 				},
 			},
 			refCode: "ID",
-			expectedControls: []Control[NISTCSFMetadata]{
+			expectedControls: []schema.Control[Metadata]{
 				{
 					RefCode:  "ID",
 					Category: "Identify",
-					MetaData: NISTCSFMetadata{
+					Metadata: Metadata{
 						References: []string{reference},
 					},
 				},
@@ -104,21 +106,21 @@ func TestAddReferencesToControl(t *testing.T) {
 		},
 		{
 			name: "append reference to existing references",
-			initialControls: []Control[NISTCSFMetadata]{
+			initialControls: []schema.Control[Metadata]{
 				{
 					RefCode:  "ID",
 					Category: "Identify",
-					MetaData: NISTCSFMetadata{
+					Metadata: Metadata{
 						References: []string{"Other Reference"},
 					},
 				},
 			},
 			refCode: "ID",
-			expectedControls: []Control[NISTCSFMetadata]{
+			expectedControls: []schema.Control[Metadata]{
 				{
 					RefCode:  "ID",
 					Category: "Identify",
-					MetaData: NISTCSFMetadata{
+					Metadata: Metadata{
 						References: []string{"Other Reference", reference},
 					},
 				},

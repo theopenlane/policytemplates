@@ -1,19 +1,22 @@
-package standards
+package nist80053
 
 import (
 	"encoding/csv"
 	"os"
 	"strings"
+
+	"github.com/theopenlane/policytemplates/frameworks"
+	"github.com/theopenlane/policytemplates/schema"
 )
 
-// NIST80053Metadata contains the metadata for a NIST 800-53 control type
-type NIST80053Metadata struct {
+// Metadata contains the metadata for a NIST 800-53 control type
+type Metadata struct {
 	Discussion      []string `json:"discussion,omitempty"`
 	RelatedControls []string `json:"related_controls,omitempty"`
 }
 
-// nist80053ParseCSV parses the NIST 800-53 CSV file and returns a slice of controls in a standard format
-func nist80053ParseCSV(file string) (s []Control[NIST80053Metadata], err error) {
+// parseCSV parses the NIST 800-53 CSV file and returns a slice of controls in a standard format
+func parseCSV(file string) (s []schema.Control[Metadata], err error) {
 	// Open the file
 	f, err := os.Open(file)
 	if err != nil {
@@ -61,12 +64,12 @@ func nist80053ParseCSV(file string) (s []Control[NIST80053Metadata], err error) 
 
 		// remove withdrawn controls
 		if !strings.Contains(description, "Withdrawn") {
-			control := Control[NIST80053Metadata]{
+			control := schema.Control[Metadata]{
 				RefCode:     refCode,
 				Category:    category,
 				Name:        name,
 				Description: description,
-				MetaData: NIST80053Metadata{
+				Metadata: Metadata{
 					Discussion:      discussion,
 					RelatedControls: relatedControls,
 				},
@@ -77,7 +80,7 @@ func nist80053ParseCSV(file string) (s []Control[NIST80053Metadata], err error) 
 				parentID = strings.Split(refCode, "(")[0]
 			}
 
-			s = appendSubControl(parentID, control, s)
+			s = frameworks.AppendSubControl(parentID, control, s)
 		}
 	}
 

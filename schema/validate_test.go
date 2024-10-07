@@ -1,9 +1,10 @@
-package standards
+package schema
 
 import (
 	"testing"
 
 	"github.com/rs/zerolog"
+
 	"github.com/santhosh-tekuri/jsonschema/v6"
 
 	"github.com/stretchr/testify/assert"
@@ -15,14 +16,15 @@ func TestValidateStandards(t *testing.T) {
 
 	tests := []struct {
 		name          string
-		controls      Standard[any]
+		controls      Framework[any]
 		errorExpected bool
 		missingFields []string
 	}{
 		{
 			name: "valid standards",
-			controls: Standard[any]{
-				Name: "SOC2",
+			controls: Framework[any]{
+				Name:      "SOC2",
+				Framework: "soc2",
 				Controls: []Control[any]{
 					{
 						RefCode:  "C1",
@@ -36,12 +38,12 @@ func TestValidateStandards(t *testing.T) {
 		},
 		{
 			name:          "empty standards",
-			controls:      Standard[any]{},
+			controls:      Framework[any]{},
 			errorExpected: true,
 		},
 		{
 			name: "missing required version",
-			controls: Standard[any]{
+			controls: Framework[any]{
 				Name: "SOC2",
 				Controls: []Control[any]{
 					{
@@ -53,8 +55,23 @@ func TestValidateStandards(t *testing.T) {
 			errorExpected: true,
 		},
 		{
+			name: "missing framework slug",
+			controls: Framework[any]{
+				Name: "SOC2",
+				Controls: []Control[any]{
+					{
+						RefCode:  "C1",
+						Category: "Category 1",
+					},
+				},
+				Version: "2017",
+			},
+
+			errorExpected: true,
+		},
+		{
 			name: "missing required name",
-			controls: Standard[any]{
+			controls: Framework[any]{
 				Version: "2017",
 				Controls: []Control[any]{
 					{
@@ -67,7 +84,7 @@ func TestValidateStandards(t *testing.T) {
 		},
 		{
 			name: "missing required controls",
-			controls: Standard[any]{
+			controls: Framework[any]{
 				Name:    "SOC2",
 				Version: "2017",
 			},
@@ -75,7 +92,7 @@ func TestValidateStandards(t *testing.T) {
 		},
 		{
 			name: "missing required category",
-			controls: Standard[any]{
+			controls: Framework[any]{
 				Name:    "SOC2",
 				Version: "2017",
 				Controls: []Control[any]{
@@ -88,7 +105,7 @@ func TestValidateStandards(t *testing.T) {
 		},
 		{
 			name: "missing required ref code",
-			controls: Standard[any]{
+			controls: Framework[any]{
 				Name:    "SOC2",
 				Version: "2017",
 				Controls: []Control[any]{
@@ -103,7 +120,7 @@ func TestValidateStandards(t *testing.T) {
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			err := validateStandards[any](tt.controls)
+			err := Validate[any](tt.controls)
 			if tt.errorExpected {
 				require.Error(t, err)
 				assert.IsType(t, &jsonschema.ValidationError{}, err)

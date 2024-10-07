@@ -8,6 +8,7 @@ including:
 - SOC2
 - NIST CSF
 - NIST 800-53
+- ISO27001
 - ... more to come ...
 
 ## Usage
@@ -42,6 +43,7 @@ which must conform to the [jsonschema](schema/jsonschema/frameworks.json)
    👉 SOC2
        NIST CSF
        NIST 800-53
+       ISO 27001:2022
 
    Description:        2017 Trust Services Criteria for Security, Availability, Processing Integrity, Confidentiality, and Privacy (with Revised Points of Focus – 2022)
    ```

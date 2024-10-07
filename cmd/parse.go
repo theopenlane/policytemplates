@@ -7,6 +7,7 @@ import (
 	"github.com/spf13/cobra"
 
 	"github.com/theopenlane/policytemplates/cmd/prompts"
+	"github.com/theopenlane/policytemplates/frameworks/iso27001"
 	"github.com/theopenlane/policytemplates/frameworks/nist80053"
 	"github.com/theopenlane/policytemplates/frameworks/nistcsf"
 	"github.com/theopenlane/policytemplates/frameworks/soc2"
@@ -60,16 +61,21 @@ func parse() error {
 		cobra.CheckErr(err)
 
 		filename = "templates/frameworks/soc2-2022.json"
-	case "nist-csf":
+	case "nist-csf-1.1":
 		controls, err = nistcsf.Generate()
 		cobra.CheckErr(err)
 
 		filename = "templates/frameworks/nist-csf-1.1.json"
-	case "nist-800-53":
+	case "nist-800-53-rev5":
 		controls, err = nist80053.Generate()
 		cobra.CheckErr(err)
 
 		filename = "templates/frameworks/nist-800-53-5.json"
+	case "iso27001:2022":
+		controls, err = iso27001.Generate()
+		cobra.CheckErr(err)
+
+		filename = "templates/frameworks/iso-27001.json"
 	default:
 		log.Error().Str("framework", framework).Msg("framework not found")
 

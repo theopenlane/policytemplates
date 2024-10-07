@@ -21,12 +21,17 @@ var frameworks = []framework{
 	{
 		Name:        "NIST CSF",
 		Description: "Cybersecurity Framework (CSF) Version 1.1",
-		Value:       "nist-csf",
+		Value:       "nist-csf-1.1",
 	},
 	{
 		Name:        "NIST 800-53",
 		Description: "Security and Privacy Controls for Federal Information Systems and Organizations (Revision 5)",
-		Value:       "nist-800-53",
+		Value:       "nist-800-53-rev5",
+	},
+	{
+		Name:        "ISO 27001:2022",
+		Description: "International Organization for Standardization (ISO) 27001:2022",
+		Value:       "iso27001:2022",
 	},
 }
 

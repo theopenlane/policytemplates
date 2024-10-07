@@ -43,6 +43,7 @@ func parseCSV(file string) (s []schema.Control[Metadata], err error) {
 		category    string
 		parentRefID string
 	)
+
 	for i, record := range records {
 		if i == 0 {
 			continue

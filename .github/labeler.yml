@@ -29,6 +29,9 @@ nist-800-53:
 nist-csf:
   - changed-files:
       - any-glob-to-any-file: frameworks/nistcsf/**
+iso27001:
+  - changed-files:
+      - any-glob-to-any-file: frameworks/iso27001/**
 jsonschema:
   - changed-files:
       - any-glob-to-any-file: schema/jsonschema/**
